@@ -6,14 +6,8 @@ if (navigator.geolocation) {
      var latit=position.coords.latitude;
     var longit=position.coords.longitude;
       
-      $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+latit+"&"+"lon="+longit+"&appid=3b07e4db49a1d3fbe2511180cf038161&units=metric",
-        /*      {
-        
-        lat: latit,
-        lon: longit,
-        APPID: '3b07e4db49a1d3fbe2511180cf038161'
-            }         
-      , */function(a){
+      $.getJSON("https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+latit+"&"+"lon="+longit+"&appid=3b07e4db49a1d3fbe2511180cf038161&units=metric",
+        function(a){
         
           
  
